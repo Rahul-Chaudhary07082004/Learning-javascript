@@ -38,3 +38,31 @@ document
         let tasklist = document.getElementById("taskList");
         tasklist.lastElementChild.remove();
     })
+
+// example 6
+document
+    .getElementById("clickMeButton")
+    .addEventListener("dblclick", function () {
+        alert("chaicode");
+    });
+
+// example 7
+document
+    .getElementById("teaList")
+    .addEventListener("click", function () {
+        if (event.target && event.target.matches(".teaItem")) {
+            alert("you have selected " + event.target.textContent)
+        }
+    });
+
+// example 8
+document
+    .getElementById("feedbackForm")
+    .addEventListener("submit", function (event) {
+        event.preventDefault();
+        let feedback = document.getElementById("feedbackInput").value;
+        console.log(feedback);
+        document.getElementById("feedbackDisplay").textContent = `feedback is : ${feedback}` 
+    });
+
+// example 9
