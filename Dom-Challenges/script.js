@@ -42,8 +42,8 @@ document
 // example 6
 document
     .getElementById("clickMeButton")
-    .addEventListener("dblclick", function () {
-        alert("chaicode");
+    .addEventListener("click", function () {
+        alert("button is clicked...");
     });
 
 // example 7
@@ -62,7 +62,20 @@ document
         event.preventDefault();
         let feedback = document.getElementById("feedbackInput").value;
         console.log(feedback);
-        document.getElementById("feedbackDisplay").textContent = `feedback is : ${feedback}` 
+        document.getElementById("feedbackDisplay").textContent = `feedback is : ${feedback}`
     });
 
 // example 9
+document
+    .addEventListener("DOMContentLoaded", function () {
+        // alert("dom is being loaded....")
+        document.getElementById("domStatus").textContent = "DOM is loaded."
+    })
+
+// example 10
+document
+    .getElementById("toggleHighlight")
+    .addEventListener("click", function () {
+        let discriptionText = document.getElementById("descriptionText");
+        discriptionText.classList.toggle("highlight");
+    })
