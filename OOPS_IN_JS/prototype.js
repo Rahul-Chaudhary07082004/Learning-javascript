@@ -5,3 +5,7 @@ let car = {tyre : 4};
 let tesla = {driver : "Ai"};
 Object.setPrototypeOf(tesla, car);
 console.log(`tesla`, Object.getPrototypeOf(tesla));
+
+// __proto__ => to access prototype of any data type
+let computer = {cpu : 12};
+console.log(computer.__proto__);
