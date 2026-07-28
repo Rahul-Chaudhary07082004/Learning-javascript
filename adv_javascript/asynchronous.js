@@ -16,3 +16,25 @@ setTimeout(() => {
 
 console.log("end");
 
+function downloadFile() {
+    console.log("Downloading....");
+
+    setTimeout(() => {
+        console.log("Download Completed!");
+    }, 4000);
+}
+
+downloadFile();
+console.log("Browsing other websites..");
+
+function pizzaOrder() {
+    console.log("Ordering pizza...");
+    
+    setTimeout(() => {
+        console.log("Pizza Delivered!");
+        
+    }, 6000);
+}
+
+pizzaOrder();
+console.log("watching tv while waiting...");
