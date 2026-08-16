@@ -21,7 +21,7 @@ function Person(name) {
     this.name = name;
 }
 const p1 = new Person("Rahul");
-console.log(p1.name);
+console.log(p1.name); // Rahul
 
 // BINDING CONTEXT
 // Binding means controlling what "this" refers to when a function runs
